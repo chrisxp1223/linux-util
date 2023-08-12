@@ -7,10 +7,18 @@
 
 // Function declarations
 void show_system_info();
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/sysinfo.h>
+#include <sys/utsname.h>
+#include <ncurses.h>
+#include <pci/pci.h>
+
 void show_pci_space();
 void show_pci_registers(struct pci_dev *device);
 
-int main() {
+int main(void) {
     // Initialize the screen
     initscr();
     cbreak();
