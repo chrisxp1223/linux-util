@@ -133,7 +133,7 @@ void show_pci_space() {
     keypad(pci_win, TRUE);
 
     struct pci_dev *selected_dev = NULL;
-    
+
     while (1) {
         row = 3;
         int current = 0;
