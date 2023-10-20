@@ -1,20 +1,13 @@
 #include <ncurses.h>
-#include <stdlib.h>
-#include <pci/pci.h>
-#include <sys/sysinfo.h>
-#include <sys/utsname.h>
-#include <stdio.h>
-
-// Function declarations
-void show_system_info();
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <sys/sysinfo.h>
 #include <sys/utsname.h>
-#include <ncurses.h>
 #include <pci/pci.h>
 
+// Function declarations
+void show_system_info();
 void show_pci_space();
 void show_pci_registers(struct pci_dev *device);
 
